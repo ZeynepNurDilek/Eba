@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui" >
+   
+    <h:head>
+        <title>Eğitim Bilişim Ağı - #{image.bul().baslik}</title>
+         
+        <link rel="stylesheet" type="text/css" href="twitter-bootstrap-v2/docs/assets/css/bootstrap.css" />
+    
+         <script type="text/javascript" src="twitter-bootstrap-v2/docs/assets/js/bootstrap-dropdown.js"></script>
+   
+        
+    </h:head>
+    <h:body>
+        
+             <div class="navbar navbar-fixed-top" style="background: #065491">  
+  <div class="navbar-inner">  
+    <div class="container">  
+    <ul class="nav">  
+  <li class="active">  
+      <img src="images/eba-new-hovered.png"  title="Eğitim Bilişim Ağı" style="margin-right: 60px;margin-top: 5px"></img>
+  </li>  
+ 
+        <li><a href="#" title="Hakkımda" >Hakkında</a></li>  
+  <li><a href="#"  title="İletişim">İletişim</a></li>  
+</ul>  
+<form class="navbar-search pull-left">  
+  <input type="text" class="search-query" placeholder="Arama yapın..."/>  
+</form>  
+
+    </div>  
+  </div>  
+</div>  
+        
+       <h:form>  
+           <div class="panel" style="margin-top: 200px;margin-left: 200px">
+               <div class="page-header"> <h1>#{image.bul().baslik}</h1> </div>
+                       
+               <p:layout style="margin-top: 10px ; min-width:500px;max-width: 950px;min-height:300px;max-height: 300px;border-color: white" id="layout">  
+                    
+               <p:layoutUnit style="border-color: white" position="west" resizable="false" size="400">  
+                    <img src="images/#{image.bul().resimurl}" style="height: 270px;width: 400px"></img>    
+               
+                </p:layoutUnit>  
+  
+                <p:layoutUnit  position="center" size="250" style="border-color: white">  
+                    <h3 style="margin-top: 0px ; margin-left: 0px"> Güncel </h3>  
+                        
+                    <div class="well" style="height:  190px;width: 200px ;margin-top: 10px">
+                               
+                                <dl>
+                                  <dt><strong>Başlık</strong></dt>
+                                           <dd>#{image.bul().baslik}</dd>
+                                           <dt><strong>İçerik</strong></dt>
+                                           <dd>#{image.bul().icerik}</dd>
+                                           <dt><strong>Kategori</strong></dt>
+                                           <dd>#{image.bul().kategori}</dd>
+                                           <dt><strong>Eklenme Tarihi</strong></dt>
+                                           <dd>#{image.bul().tarih}</dd>
+                                           <dt><strong>Etiket</strong></dt>
+                                           <dd>#{image.bul().etiket}</dd>
+                                            
+                                      
+                                       </dl>
+                                   
+                                  
+                                   
+                           </div>
+                                   
+                           
+                           
+                           
+                       
+    </p:layoutUnit>  
+
+                   <p:layoutUnit position ="east" size="250" style="border-color: white"  >  
+                    
+                       <h3 style="margin-top: 0px ; margin-left: 0px"> Önerileriniz: </h3>  
+                        
+                    <div class="well" style="height:  190px;width: 200px ;margin-top: 10px">
+                               
+                                <dl>
+                                  
+                                           <dt><strong>Başlık</strong></dt>
+                                           <dd> <input type="text" style="" ></input></dd>
+                                           <dt><strong>İçerik</strong></dt>
+                                           <dd> <input type="text"></input></dd>
+                                           <dt><strong>Kategori</strong></dt>
+                                           <dd> <input type="text"></input></dd>
+                                           <dt><strong>Eklenme Tarihi</strong></dt>
+                                           <dd><input type="text"></input></dd>
+                                           <dt><strong>Etiket</strong></dt>
+                                           <dd><input type="text" ></input></dd>
+                                            
+                                      
+                                       </dl>
+                                   
+                                  
+                                   
+                           </div>
+                                   
+               </p:layoutUnit>
+               
+               </p:layout>  
+                               
+                           
+           </div>   
+       </h:form>
+    </h:body>
+</html>
